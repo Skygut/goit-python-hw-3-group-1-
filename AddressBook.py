@@ -140,6 +140,7 @@ class AddressBook(UserDict):
         for key, value in week_days.items():
             if value != []:
                 birthday_info.append(f"{key}: {', '.join(value)}\n")
+                print(f"{key}: {', '.join(value)}\n")
         if birthday_info:
             return "".join(birthday_info)
         else:
